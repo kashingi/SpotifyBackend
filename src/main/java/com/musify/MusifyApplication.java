@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MusifyFrontendApplication {
+public class MusifyApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(MusifyFrontendApplication.class, args);
+		SpringApplication.run(MusifyApplication.class, args);
 	}
 
 }
