@@ -70,7 +70,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> handleGeneralException(Exception ex, HttpStatus status, WebRequest request) {
+    public ResponseEntity<ErrorResponse> handleGeneralException(Exception ex, WebRequest request) {
         logger.error("Unexpected exception occurred : {} ", ex.getMessage(), ex);
 
         return buildErrorResponse(ex, HttpStatus.INTERNAL_SERVER_ERROR, request);
